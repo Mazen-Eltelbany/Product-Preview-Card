@@ -1,0 +1,187 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("Montserrat-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+.fraunces-unique {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Replace <weight> with a real number */
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+  --primary-green-500: hsl(158, 36%, 37%);
+  --primary-green-700: hsl(158, 42%, 18%);
+  --neutral-black: hsl(212, 21%, 14%);
+  --neutral-grey: hsl(228, 12%, 48%);
+  --neutral-cream: hsl(30, 38%, 92%);
+  --neutral-white: hsl(0, 0%, 100%); 
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--neutral-cream);
+}
+.card{
+    display: flex;
+    width: 650px;
+    height:auto;
+    transform: translateY(20%);
+    margin: 24px auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--neutral-white);
+    -webkit-transform: translateY(20%);
+    -moz-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    -o-transform: translateY(20%);
+    border-radius: 15px 0px 0px 15px;
+}
+.card .img{
+    width: 350px;
+    height: 485px;
+}
+.card .img img:first-child{
+    width: 100%;
+    height:100%;
+    border-radius: 15px 0px 0px 15px;
+    -webkit-border-radius: 15px 0px 0px 15px;
+    -moz-border-radius: 15px 0px 0px 15px;
+    -ms-border-radius: 15px 0px 0px 15px;
+    -o-border-radius: 15px 0px 0px 15px;
+}
+.card .img img:last-child{
+    display: none;
+    width: 100%;
+    height:100%;
+    border-radius: 15px 0px 0px 15px;
+    -webkit-border-radius: 15px 0px 0px 15px;
+    -moz-border-radius: 15px 0px 0px 15px;
+    -ms-border-radius: 15px 0px 0px 15px;
+    -o-border-radius: 15px 0px 0px 15px;
+}
+.card .text{
+    width: 300px;
+    transform:translateY(-10px);
+    -webkit-transform:translateY(-10px);
+    -moz-transform:translateY(-10px);
+    -ms-transform:translateY(-10px);
+    -o-transform:translateY(-10px);
+    padding: 20px;
+}
+.card .text h1{
+  line-height: 1;
+  font-size: 34px;
+    font-weight: 700;
+    color: var(--neutral-black);
+    margin: 10px 0;
+}
+.card .text p{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--neutral-grey);
+    margin: 10px 0;
+    line-height: 1.5;
+}
+.card .text .perfume{
+  font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--neutral-grey);
+    padding: 15px;
+}
+.card .text .price{
+    display: flex;
+    width:100%;
+    transform: translateX(-18px);
+    align-items: center;
+    gap: 10px;
+    -webkit-transform: translateX(-18px);
+    -moz-transform: translateX(-18px);
+    -ms-transform: translateX(-18px);
+    -o-transform: translateX(-18px);
+}
+.card .text .price p:nth-child(1){
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--primary-green-500);
+    margin: 15px;
+}
+.btn{
+  display: flex;
+  width: 97%;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--primary-green-500);
+  color: var(--neutral-white);
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.btn .img-btn{
+  padding-top: 3px;
+  width: 15px;
+  height: 10%;
+}
+.btn .img-btn img{
+  width: 100%;
+  height: 100%;
+}
+.btn button{
+  background: none;
+  border: none;
+  color: var(--neutral-white);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: var(--primary-green-700);
+}
+@media (max-width:376px) {
+  .card{
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    transform: translateY(0);
+    border-radius: 15px 15px 0px 0px;
+    -webkit-border-radius: 15px 15px 0px 0px;
+    -moz-border-radius: 15px 15px 0px 0px;
+    -ms-border-radius: 15px 15px 0px 0px;
+    -o-border-radius: 15px 15px 0px 0px;
+}
+  .card .img{
+     width: 100%;
+     background: none;
+     height:330px;
+}
+.card .img img:first-child{
+  display: none;
+    width: 100%;
+    height: 100%;
+}
+.card .img img:last-child{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0px 0px;
+    -webkit-border-radius: 15px 15px 0px 0px;
+    -moz-border-radius: 15px 15px 0px 0px;
+    -ms-border-radius: 15px 15px 0px 0px;
+    -o-border-radius: 15px 15px 0px 0px;
+}
+}
